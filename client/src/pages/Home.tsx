@@ -13,6 +13,14 @@ import { products } from "@/data/products";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background overflow-hidden relative">
+
+<div
+  className="fixed inset-0 opacity-[0.08] pointer-events-none bg-center bg-no-repeat bg-contain"
+  style={{
+    backgroundImage: "url('/logo-radar.png')",
+    backgroundSize: "70%"
+  }}
+></div>
       {/* Radar Background - Suave e Contínuo */}
       <div className="radar-background">
         <div className="radar-circles">
@@ -34,8 +42,11 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-card/80 backdrop-blur border-b border-green-500/50 shadow-lg shadow-green-500/20">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-yellow-400 rounded-lg flex items-center justify-center shadow-lg shadow-green-400/50">
-              ⚡
+            img
+  src="/logo-radar.png"
+  alt="Radar de Ofertas"
+  className="w-20 h-20 object-contain drop-shadow-[0_0_15px_rgba(0,255,100,0.7)]"
+/>
             </div>
             <h1 className="text-xl font-bold">
               <span className="text-white">RADAR</span>
