@@ -48,7 +48,7 @@ export default function Home() {
               className="w-20 h-20 object-contain drop-shadow-[0_0_15px_rgba(0,255,100,0.7)]"
             />
             </div>
-            className="text-xl font-bold">
+            
               <span className="text-white">RADAR</span>
               <span className="text-yellow-400"> DE</span>
               <span className="text-yellow-400"> OFERTAS</span>
