@@ -13,32 +13,15 @@ import { products } from "@/data/products";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background overflow-hidden relative">
+      <div
+        className="fixed inset-0 opacity-[0.08] pointer-events-none bg-center bg-no-repeat bg-contain"
+        style={{
+          backgroundImage: "url('/logo-radar.png')",
+          backgroundSize: "70%",
+        }}
+      ></div>
 
-<div
-  className="fixed inset-0 opacity-[0.08] pointer-events-none bg-center bg-no-repeat bg-contain"
-  style={{
-    backgroundImage: "url('/logo-radar.png')",
-    backgroundSize: "70%"
-  }}
-></div>
-      {/* Radar Background - Suave e Contínuo */}
-      <div className="radar-background">
-        <div className="radar-circles">
-          <div className="radar-circle"></div>
-          <div className="radar-circle"></div>
-          <div className="radar-circle"></div>
-          <div className="radar-circle"></div>
-        </div>
-        <div className="radar-lines">
-          <div className="radar-line"></div>
-          <div className="radar-line"></div>
-          <div className="radar-line"></div>
-          <div className="radar-line"></div>
-        </div>
-        <div className="radar-center"></div>
-      </div>
-
-           {/* Header/Navigation */}
+      {/* Header/Navigation */}
       <header className="sticky top-0 z-50 bg-card/80 backdrop-blur border-b border-green-500/50 shadow-lg shadow-green-500/20">
         <div className="container flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
@@ -48,7 +31,7 @@ export default function Home() {
               className="w-28 h-16 object-contain drop-shadow-[0_0_18px_rgba(0,255,100,0.8)]"
             />
           </div>
-      
+
           <a href={siteConfig.links.grupoWhatsapp} target="_blank" rel="noopener noreferrer">
             <Button className="bg-green-500 hover:bg-green-600 text-background font-bold shadow-lg shadow-green-500/50">
               Entrar no Grupo
