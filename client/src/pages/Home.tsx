@@ -43,16 +43,16 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             img
-  src="/logo-radar.png"
-  alt="Radar de Ofertas"
-  className="w-20 h-20 object-contain drop-shadow-[0_0_15px_rgba(0,255,100,0.7)]"
-/>
+              src="/logo-radar.png"
+              alt="Radar de Ofertas"
+              className="w-20 h-20 object-contain drop-shadow-[0_0_15px_rgba(0,255,100,0.7)]"
+            />
             </div>
-            <h1 className="text-xl font-bold">
+            className="text-xl font-bold">
               <span className="text-white">RADAR</span>
               <span className="text-yellow-400"> DE</span>
               <span className="text-yellow-400"> OFERTAS</span>
-            </h1>
+            
           </div>
           <a href={siteConfig.links.grupoWhatsapp} target="_blank" rel="noopener noreferrer">
             <Button className="bg-green-500 hover:bg-green-600 text-background font-bold shadow-lg shadow-green-500/50">
