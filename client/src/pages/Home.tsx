@@ -12,14 +12,18 @@ import { products } from "@/data/products";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background overflow-hidden relative">
-      <div
-        className="fixed inset-0 opacity-[0.08] pointer-events-none bg-center bg-no-repeat bg-contain"
-        style={{
-          backgroundImage: "url('/logo-radar.png')",
-          backgroundSize: "70%",
-        }}
-      ></div>
+    <div className="flex items-center gap-3">
+  <img
+    src="/logo-radar.png"
+    alt="Radar de Ofertas"
+    className="w-24 h-20 object-contain"
+  />
+
+  <div className="leading-none">
+    <div className="text-3xl font-black text-white">RADAR DE</div>
+    <div className="text-4xl font-black text-yellow-400">OFERTAS 🔍</div>
+  </div>
+</div>
 
       {/* Header/Navigation */}
       <header className="sticky top-0 z-50 bg-card/80 backdrop-blur border-b border-green-500/50 shadow-lg shadow-green-500/20">
