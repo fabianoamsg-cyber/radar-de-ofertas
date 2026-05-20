@@ -12,34 +12,38 @@ import { products } from "@/data/products";
 
 export default function Home() {
   return (
-    <div className="flex items-center gap-3">
-  <img
-    src="/logo-radar.png"
-    alt="Radar de Ofertas"
-    className="w-24 h-20 object-contain"
-    {/* Header/Navigation */}
-<header className="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-green-500/60 shadow-lg shadow-green-500/20">
-  <div className="container flex items-center justify-between h-20">
-    <div className="flex items-center gap-3">
-      <img
-        src="/logo-radar.png"
-        alt="Radar de Ofertas"
-        className="w-24 h-20 object-contain drop-shadow-[0_0_18px_rgba(0,255,100,0.8)]"
+    <div className="min-h-screen bg-background overflow-hidden relative">
+      <div
+        className="fixed inset-0 opacity-[0.08] pointer-events-none bg-center bg-no-repeat bg-contain"
+        style={{
+          backgroundImage: "url('/logo-radar.png')",
+          backgroundSize: "70%",
+        }}
       />
 
-      <div className="leading-none">
-        <div className="text-2xl md:text-3xl font-black text-white">RADAR DE</div>
-        <div className="text-3xl md:text-4xl font-black text-yellow-400">OFERTAS 🔍</div>
-      </div>
-    </div>
+      {/* Header/Navigation */}
+      <header className="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-green-500/60 shadow-lg shadow-green-500/20">
+        <div className="container flex items-center justify-between h-20">
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo-radar.png"
+              alt="Radar de Ofertas"
+              className="w-24 h-20 object-contain drop-shadow-[0_0_18px_rgba(0,255,100,0.8)]"
+            />
 
-    <a href={siteConfig.links.grupoWhatsapp} target="_blank" rel="noopener noreferrer">
-      <Button className="bg-green-500 hover:bg-green-600 text-black font-black shadow-lg shadow-green-500/50">
-        Entrar no Grupo VIP
-      </Button>
-    </a>
-  </div>
-</header>
+            <div className="leading-none">
+              <div className="text-2xl md:text-3xl font-black text-white">RADAR DE</div>
+              <div className="text-3xl md:text-4xl font-black text-yellow-400">OFERTAS 🔍</div>
+            </div>
+          </div>
+
+          <a href={siteConfig.links.grupoWhatsapp} target="_blank" rel="noopener noreferrer">
+            <Button className="bg-green-500 hover:bg-green-600 text-black font-black shadow-lg shadow-green-500/50">
+              Entrar no Grupo VIP
+            </Button>
+          </a>
+        </div>
+      </header>
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 border-b border-green-500/30 z-10">
         <div className="container relative">
