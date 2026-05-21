@@ -177,27 +177,24 @@ Encontre ofertas nas principais lojas
   [
     "Mercado Livre",
     "As melhores ofertas do Mercado Livre",
-    "/mercadolivre.png",
+    "/mercadolivre.logo.png",
     "border-yellow-400",
     "https://meli.la/2ewTLHE"
   ],
-
   [
     "Shopee",
     "Ofertas imperdíveis na Shopee",
-    "/shopee.png",
+    "/shopee.logo.png",
     "border-orange-500",
     "https://s.shopee.com.br/2VojvDF7Vl"
   ],
-
   [
     "Amazon",
     "As melhores ofertas da Amazon",
-    "/amazon.png",
+    "/amazon.logo.png",
     "border-yellow-400",
     "https://amzn.to/4upTBQR"
   ]
-
 ].map(([titulo, descricao, logo, border, link]) => (
 
 <Card
