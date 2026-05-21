@@ -174,42 +174,68 @@ Encontre ofertas nas principais lojas
 <div className="grid md:grid-cols-3 gap-6">
 
 {[
-["Mercado Livre","As melhores ofertas","/mercadolivre.png","border-yellow-400"],
-["Shopee","Ofertas imperdíveis","/shopee.png","border-orange-500"],
-["Amazon","As melhores ofertas","/amazon.png","border-yellow-400"]
-].map(([titulo,descricao,logo,border])=>(
+  [
+    "Mercado Livre",
+    "As melhores ofertas do Mercado Livre",
+    "/mercadolivre.png",
+    "border-yellow-400",
+    "https://meli.la/2ewTLHE"
+  ],
+
+  [
+    "Shopee",
+    "Ofertas imperdíveis na Shopee",
+    "/shopee.png",
+    "border-orange-500",
+    "https://s.shopee.com.br/2VojvDF7Vl"
+  ],
+
+  [
+    "Amazon",
+    "As melhores ofertas da Amazon",
+    "/amazon.png",
+    "border-yellow-400",
+    "https://amzn.to/4upTBQR"
+  ]
+
+].map(([titulo, descricao, logo, border, link]) => (
 
 <Card
 key={String(titulo)}
-className={`bg-black/60 border ${border} p-6`}
+className={`bg-black/60 border ${border} p-6 hover:scale-105 transition-all duration-300 shadow-lg`}
 >
 
 <div className="flex gap-5 items-center">
 
 <img
 src={String(logo)}
+alt={String(titulo)}
 className="w-28 h-28 object-contain"
 />
 
 <div>
 
-<h3 className="text-2xl font-bold">
-
+<h3 className="text-2xl font-bold text-white">
 {titulo}
-
 </h3>
 
 <p className="text-white/70">
-
 {descricao}
-
 </p>
 
-<Button className="mt-4">
+<a
+href={String(link)}
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<Button className="mt-4 bg-transparent border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
 
 Ver ofertas →
 
 </Button>
+
+</a>
 
 </div>
 
